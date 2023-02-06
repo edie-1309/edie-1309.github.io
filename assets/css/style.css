@@ -170,6 +170,12 @@ span {
 	color: black;
 }
 
+.projects .img-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 /* Contact Styling */
 .contact-list {
 	display: flex;
@@ -254,4 +260,97 @@ span {
 .button-primary:hover {
 	color: var(--primary);
 	background-color: white;
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+	/* Profile Styling */
+	.profile > .container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.profile > .container > .img-profile {
+		margin-bottom: 50px;
+	}
+
+	/* About Styling */
+	.about > .container {
+		padding: 0 3em;
+	}
+
+	/* Project Styling */
+	.projects .img-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Contact Styling */
+	.contact-list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-list > div {
+		margin-bottom: 30px;
+	}
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+	/* Navbar */
+	.navbar {
+		padding: 2rem 1rem;
+	}
+
+	/* Profile Styling */
+	.profile {
+		padding: 0 1rem;
+	}
+
+	.profile > .container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.profile > .container > .img-profile {
+		margin-bottom: 50px;
+	}
+
+	/* About Styling */
+	.about > .container {
+		padding: 0 3em;
+	}
+
+	.about > .container > p {
+		font-size: 14px;
+		text-align: center;
+		font-weight: 500;
+	}
+
+	/* Project Styling */
+	.projects .img-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.projects img {
+		width: 250px;
+	}
+
+	/* Contact Styling */
+	.contact-list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-list > div {
+		margin-bottom: 30px;
+	}
 }
